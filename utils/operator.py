@@ -29,3 +29,5 @@ class BrowserOperator:
             writer.writeheader()
             for result in self.results:
                 writer.writerow(result)
+
+        self.browser.close_browser()  
